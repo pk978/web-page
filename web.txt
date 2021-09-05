@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        height: 300px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="background-color: green; height: 50px;"><h3><center>Title<center><h3></div>
+    <div style="background-color: green; width: 200px; height: 600px;"></div>
+
+    <div class="row" style="padding-left: 210px; margin-top: -600px;">
+      <div
+        class="column"
+        style="background-color: #ddd; margin: 10px; width: 210px;"
+      ></div>
+      <div
+        class="column"
+        style="background-color: #ddd; margin: 10px; width: 210px;"
+      ></div>
+      <div
+        class="column"
+        style="background-color: #ddd; margin: 10px; width: 210px;"
+      ></div>
+      <div
+        class="column"
+        style="background-color: #ddd; margin: 10px; width: 210px;"
+      ></div>
+    </div>
+  </body>
+</html>
